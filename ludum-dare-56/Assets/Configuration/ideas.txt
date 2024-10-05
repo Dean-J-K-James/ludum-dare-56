@@ -1,0 +1,11 @@
+Tiny Creatures
+
+-can pick up tiny creature companions around the map.
+-the companions act as the player's weapons.
+-for example, a bee orbits around the player and damages enemies that touch it.
+-
+
+
+-each creature should be instantiated and disabled. Once the relevant creature has been rescued, enable the prefab.
+
+-creatures should be randomly shaped and coloured tiny ghosts.
