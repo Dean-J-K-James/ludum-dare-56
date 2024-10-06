@@ -8,7 +8,6 @@ public class WorldGenerator : MonoBehaviour
     public CustomTile path; //
     public CustomTile wall; //
     public Tilemap tilemap;
-    public List<GameObject> companions;
 
     void Start()
     {
@@ -32,7 +31,6 @@ public class WorldGenerator : MonoBehaviour
 
         //Surround paths with walls.
         SurroundWalls();
-        PlaceCompanions();
     }
 
     void RandomWalk(int sx, int sy, int range)
@@ -89,34 +87,6 @@ public class WorldGenerator : MonoBehaviour
                 if (tilemap.GetTile(new Vector3Int(x, y, 0)) == null)
                 {
                     tilemap.SetTile(new Vector3Int(x, y, 0), wall);
-                }
-            }
-        }
-    }
-
-    void PlaceCompanions()
-    {
-        var bounds = tilemap.localBounds;
-
-        var minx = Mathf.RoundToInt(bounds.min.x);
-        var miny = Mathf.RoundToInt(bounds.min.y);
-        var maxx = Mathf.RoundToInt(bounds.max.x);
-        var maxy = Mathf.RoundToInt(bounds.max.y);
-
-        for (int i = 0; i < companions.Count; i++)
-        {
-            bool placed = false;
-
-            while (placed == false)
-            {
-                int tryx = Random.Range(minx, maxx);
-                int tryy = Random.Range(miny, maxy);
-
-                if (tilemap.GetTile(new Vector3Int(tryx, tryy, 0)) == path)
-                {
-                    var c = Instantiate(companions[i]);
-                    c.transform.position = new Vector2(tryx, tryy);
-                    placed = true;
                 }
             }
         }

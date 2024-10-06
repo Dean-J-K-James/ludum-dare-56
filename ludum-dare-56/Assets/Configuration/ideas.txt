@@ -9,3 +9,9 @@ Tiny Creatures
 -each creature should be instantiated and disabled. Once the relevant creature has been rescued, enable the prefab.
 
 -creatures should be randomly shaped and coloured tiny ghosts.
+
+-make levels more exciting with portals and traps.
+-companions are weapons.
+-you can only have one weapon at a time.
+-if you pick up another companion, it replaces th old one.
+-every 30 seconds, a new companion spawns.

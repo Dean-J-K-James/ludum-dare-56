@@ -100,3 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c8dca642bbc97704ea29ff9f1819ef2d, type: 3}
+  weapon: {fileID: 7369995185974032627, guid: cf250a01cb1e3e246b21b0d26c69f336, type: 3}
+  colourName: red

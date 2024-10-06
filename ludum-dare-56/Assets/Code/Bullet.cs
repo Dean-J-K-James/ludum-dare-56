@@ -16,16 +16,5 @@ public class Bullet : MonoBehaviour
         }
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
-        //if (Vector2.Distance(transform.position, target.position) <= 0.2f)
-        //{
-        //    //Arrived at target, so deal damage.
-        //    var enemy = target.GetComponent<Enemy>();
-        //    if (enemy != null)
-        //    {
-        //        enemy.DamageEnemy();
-        //    }
-        //    Destroy(gameObject);
-        //}
     }
 }

@@ -20,7 +20,7 @@ public class DartFrog : MonoBehaviour
     {
         combatTimer += Time.deltaTime;
 
-        if (combatTimer >= 1)
+        if (combatTimer >= 1f)
         {
             combatTimer = 0;
 

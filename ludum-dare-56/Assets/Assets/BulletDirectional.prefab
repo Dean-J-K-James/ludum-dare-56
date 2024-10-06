@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1894371426328801184}
   - component: {fileID: 7850430662955312735}
-  - component: {fileID: -96864341643409070}
+  - component: {fileID: 5566669040543687186}
   - component: {fileID: -482484646877917796}
   - component: {fileID: 5439501523166316751}
   m_Layer: 7
-  m_Name: Bullet
+  m_Name: BulletDirectional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-96864341643409070
+--- !u!114 &5566669040543687186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,10 +98,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5928870350330963527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff509055a0484214b8ccbe1a741091c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8165cc1d13c238342bd983fb2f47f3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {x: 0, y: 0}
   speed: 7.5
 --- !u!114 &-482484646877917796
 MonoBehaviour:

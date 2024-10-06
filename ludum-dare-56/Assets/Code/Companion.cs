@@ -5,6 +5,9 @@ using UnityEngine;
 public class Companion : MonoBehaviour
 {
     public Transform player;
+    public Sprite sprite;
+    public GameObject weapon;
+    public string colourName;
 
     void Start()
     {
@@ -21,6 +24,7 @@ public class Companion : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) <= 1f)
         {
             //Add this companion to the player's roster.
+            FindFirstObjectByType<CompanionManager>().AddCompanion(this);
             Destroy(gameObject);
         }
     }
