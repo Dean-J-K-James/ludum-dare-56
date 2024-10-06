@@ -28,11 +28,11 @@ public class DartFrog : MonoBehaviour
 
             if (closestEnemy != null)
             {
-                Debug.Log("Closest enemy: " + closestEnemy + " with distance: " + Vector2.Distance(player.position, closestEnemy.transform.position));
+                //Debug.Log("Closest enemy: " + closestEnemy + " with distance: " + Vector2.Distance(player.position, closestEnemy.transform.position));
 
                 if (Vector2.Distance(player.position, closestEnemy.transform.position) <= 8f)
                 {
-                    Debug.Log("Spawning bullet");
+                    //Debug.Log("Spawning bullet");
                     var b = Instantiate(bullet);
 
                     b.transform.position = player.position;

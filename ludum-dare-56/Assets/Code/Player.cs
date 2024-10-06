@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -41,11 +43,18 @@ public class Player : MonoBehaviour
 
         movement.Normalize();
         GetComponent<Rigidbody2D>().velocity = movement * speed;
+
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, movement);
     }
 
     public void DamagePlayer()
     {
         health--;
         FindFirstObjectByType<PlayerHealth>().UpdateHealthUI(health);
+
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("scnGame");
+        }
     }
 }

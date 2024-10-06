@@ -29,6 +29,8 @@ public class ScatterGun : MonoBehaviour
 			var newx = player.position.x + (5f * Mathf.Cos(angle));
 			var newy = player.position.y + (5f * Mathf.Sin(angle));
 
+			Debug.Log(angle);
+
 			CreateBullet(new Vector3(newx, newy));
 		}
 
@@ -38,7 +40,9 @@ public class ScatterGun : MonoBehaviour
 	{
 		var b = Instantiate(bullet);
 
+		Debug.Log("Creating bullet with target: " + target);
+
 		b.transform.position = player.position;
-		b.target = player.position + target;
+		b.target = target;
 	}
 }

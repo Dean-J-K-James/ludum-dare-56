@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: stone
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 5725184139431673129, guid: 2bb68ccb300e7864aa1a72b8d33db53b, type: 3}
+  - {fileID: 313138969, guid: 05bde12bf209bee4eaa3ace90614549f, type: 3}
+  - {fileID: -865917261, guid: 05bde12bf209bee4eaa3ace90614549f, type: 3}
+  colliderType: 0

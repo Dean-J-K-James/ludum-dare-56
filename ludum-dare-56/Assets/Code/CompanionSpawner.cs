@@ -14,11 +14,11 @@ public class CompanionSpawner : MonoBehaviour
 	{
 		timer += Time.deltaTime;
 
-		if (timer >= 30f)
+		if (timer >= 15f)
 		{
 			timer = 0f;
 			PlaceCompanion();
-			Debug.Log("Companion has been placed");
+			//Debug.Log("Companion has been placed");
 		}
 	}
 
